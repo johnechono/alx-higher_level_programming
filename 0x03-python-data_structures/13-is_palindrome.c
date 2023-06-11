@@ -5,8 +5,8 @@
 
 /**
  * is_palindrome- will check if a singly linked list is a palindrome.
- * @head: double pointer to the head
- * Return: if it's not a palindrome 0, 1 if it's a palindrome.
+ * @head: double head pointer
+ * Return: 0 if it's not a palindrome, 1 if it's a palindrome.
  */
 int is_palindrome(listint_t **head)
 {
@@ -30,9 +30,9 @@ int is_palindrome(listint_t **head)
 		j++;
 	}
 	j--;
-	while (j >= 0 && a <= i)
+	while (j >= 0 && a <= j)
 	{
-		if (value [j] != values[a])
+		if (values[j] != values[a])
 		{
 			return (0);
 		}
