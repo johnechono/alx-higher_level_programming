@@ -1,8 +1,9 @@
-earch_replace(my_list, search, replace):
-    new_list = []
+#!/usr/bin/python3
+def search_replace(my_list, search, replace):
+    list_new = []
     for i in my_list:
         if i == search:
-            new_list.append(replace)
+            list_new.append(replace)
         else:
-            new_list.append(i)
-    return new_list
+            list_new.append(i)
+    return (list_new)
