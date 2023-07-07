@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """defines a rectangle based on 4-rectangle.py"""
 
+
 class Rectangle:
     """string representation of a rectangle"""
 
