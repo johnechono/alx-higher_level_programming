@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """uses # to print rectangle"""
 
+
 class Rectangle:
     """Rectangle class."""
 
