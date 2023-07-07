@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """calls the __del__() method when an object gets deleted"""
 
+
 class Rectangle:
     """Rectangle class."""
 
