@@ -3,6 +3,7 @@
 Returns its area and perimeter
 """
 
+
 class Rectangle:
     """Rectangle class."""
 
