@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""raising an exception for non implementation of class"""
+"""raise an exception for non implementation of class"""
 
 
 class BaseGeometry:
