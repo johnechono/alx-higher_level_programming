@@ -92,6 +92,7 @@ Prototypes for functions written in this project:
   * [101-add_attribute.py](./101-add_attribute.py): Python function that adds a new attribute to an
   object if possible.
     * If an attribute cannot be added, a `TypeError` exception is raised with the
+<<<<<<< HEAD
     message `can't add new attribute`.# Python - Inheritance
 
 ## Tests :heavy_check_mark:
@@ -189,3 +190,7 @@ Prototypes for functions written in this project:
   object if possible.
     * If an attribute cannot be added, a `TypeError` exception is raised with the
     message `can't add new attribute`.
+=======
+    message `can't add new attribute`.
+
+>>>>>>> 74e5e126a6eb9bc41f526b7412919ff3b2108730
