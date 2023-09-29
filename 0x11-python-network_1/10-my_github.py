@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-""" Interview question """
-
+"""Python script that takes my GitHub credentials
+(username and password) and uses the GitHub API to display my id
+"""
 if __name__ == "__main__":
-    from sys import argv
-    from requests import get
+    import requests
+    import sys
 
-    url = f'https://api.github.com/repos/{argv[2]}/{argv[1]}/commits'
+    url = "https://api.github.com/user"
+    user = sys.argv[1]
+    passwd = sys.argv[2]
+    data_res = requests.get(url, auth=(user, passwd))
 
-    res = get(url)
-    commits = res.json()
     try:
-        for i in range(10):
-            print('{}: {}'.format(
-                commits[i].get('sha'),
-                commits[i].get('commit').get('author').get('name')))
-    except IndexError:
-        pass
+        data_json = data_res.json()
+        print(data_json["id"])
+    except Exception:
+        print("None")
